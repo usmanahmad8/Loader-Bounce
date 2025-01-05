@@ -1,0 +1,29 @@
+body{
+    background-color: #212121;
+}
+.row{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius:50%;
+}
+.shadow{
+    width: 25px;
+    height: 5px;
+    background-color: #000;
+    border-radius:50%;
+}
