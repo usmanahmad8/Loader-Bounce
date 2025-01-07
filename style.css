@@ -14,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
 }
 .circle{
     width: 25px;
@@ -23,7 +24,49 @@ body{
 }
 .shadow{
     width: 25px;
-    height: 5px;
-    background-color: #000;
-    border-radius:50%;
+    height: 2px;
+    background-color: #595959;
+    border-radius: 50%;
+    margin-top: 15px;
+    filter: blur(2px);
+}
+.dot1{
+    animation-name: c1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: -46px;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 0s; */
+}
+.dot2{
+    animation-name: c2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 0.5s; */
+}
+.dot3{
+    animation-name: c3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    right: -46px;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 1s; */
+}
+@keyframes c1 {
+    0%, 100% { margin-top: 0px; }
+    50% { margin-top: -30px; }
+}
+
+@keyframes c2 {
+    0%, 100% { margin-top: 0px; }
+    50% { margin-top: -40px; }
+}
+
+@keyframes c3 {
+    0%, 100% { margin-top: 0px; }
+    50% { margin-top: -50px; }
 }
